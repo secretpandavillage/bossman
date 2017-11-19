@@ -6,7 +6,6 @@ html {
 }
 
 body {
-    font: 16px/26px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     -webkit-font-smoothing: antialiased;
@@ -16,13 +15,13 @@ body {
 h2 {
   margin: 0px;
   display: inline-block;
-  font-size: 92px;
+  font-size: 68px;
 }
 
 section {
   display: block;
   margin: 0 auto;
-  min-height: 180px;
+  min-height: 160px;
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -38,8 +37,9 @@ section {
 }
 .image .img {
   background: url('../img/bglogo.png') no-repeat center;
-  height: 188px;
-  width:188px;
+  height: 160px;
+  width:160px;
+  background-size: cover;
   display: inline-block;
   position: relative;
 }
@@ -48,8 +48,8 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 188px;
-  width:188px;
+  border-radius: 160px;
+  width:160px;
   height: 100%;
   animation: pulse 1s infinite;
   -webkit-animation: pulse 1s infinite;
@@ -71,8 +71,8 @@ section {
   -ms-transform: transl2teY(-50%);
   transform: translateY(-50%);
   color: #848484;
-  font-size: 32px;
-  margin-top: -35px;
+  font-size: 26px;
+  margin-top: -55px;
 }
 .description p {
   margin: 0px;
