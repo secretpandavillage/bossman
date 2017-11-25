@@ -5,14 +5,23 @@ html {
     overflow: hidden;
 }
 
-body {
+body, #content {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     background-color: #25232b;
 }
-
+#content {
+  width:100%;
+  height: 100%;
+}
 h2 {
+  margin: 0px;
+  display: inline-block;
+  font-size: 68px;
+}
+
+.image h2 {
   margin: 0px;
   display: inline-block;
   font-size: 68px;
@@ -28,6 +37,46 @@ section {
   transform-style: preserve-3d;
 }
 
+.login {
+  position: relative;
+  top: 50%;
+  width:250px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.login input {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #25232b;
+  border: none;
+  padding: 10px;
+  -webkit-appearance:none;
+  border: 1px solid transparent;
+}
+.login input:active, input:focus {
+  outline: none;
+  border: 1px solid #fa005480;
+  box-shadow: 0 0 10px #fa005480;
+}
+.left.icono-eye {
+  border-radius: 0% 50%;
+  transform: scale(1.8);
+  margin-right: 40px;
+  
+}
+.right.icono-eye {
+  border-radius: 50% 0%;
+  transform: scale(1.8);
+}
+
+.icon-container {
+  margin-bottom: 20px;
+}
+.icon-container:hover .icono {
+  color:#fa0054;
+}
 .image {
   position: relative;
   top: 40%;
