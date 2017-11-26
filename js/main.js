@@ -32,7 +32,9 @@ function renderTemplate(template, user) {
         break;
 
         case 'user':
-            output = ` <section class="image">
+            output = ` 
+            <span onclick="logout()" class="close"></span>
+            <section class="image">
              <div class="animated bounceInDown img"></div>
             </section>
             <section class="text">
@@ -58,4 +60,9 @@ function login() {
     else {
         return
     }
+}
+
+function logout() {
+    storage.removeItem('username')
+    renderTemplate('login')
 }

@@ -38,7 +38,46 @@ section {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.logout {
+  position: absolute;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.close:hover {
+  background-color:#FE5F55;
+}
 
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  width: 5px;
+  height: 25px;
+  left: 20px;
+  background-color: #e4e4e4;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 .login {
   position: relative;
   top: 50%;
