@@ -9,7 +9,7 @@ body, #content {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     -webkit-font-smoothing: antialiased;
-    background-color: #25232b;
+    background-color: #212129;
 }
 #content {
   width:100%;
@@ -20,7 +20,9 @@ h2 {
   display: inline-block;
   font-size: 68px;
 }
-
+.icon-container h2 {
+  font-size: 28px;
+}
 .image h2 {
   margin: 0px;
   display: inline-block;
@@ -49,16 +51,18 @@ section {
   width: 100%;
   border-radius: 5px;
   margin-top: 15px;
-  color: #25232b;
+  color: #212129;
   border: none;
   padding: 10px;
   -webkit-appearance:none;
+  background: rgba(0,0,0,0.5);
+  color: #FFF;
   border: 1px solid transparent;
 }
 .login input:active, input:focus {
   outline: none;
-  border: 1px solid #fa005480;
-  box-shadow: 0 0 10px #fa005480;
+  border: 1px solid #fa005410;
+  box-shadow: 0 0 10px #fa005410;
 }
 .left.icono-eye {
   border-radius: 0% 50%;
@@ -72,7 +76,7 @@ section {
 }
 
 .icon-container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .icon-container:hover .icono {
   color:#fa0054;
