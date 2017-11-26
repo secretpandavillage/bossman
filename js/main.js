@@ -16,7 +16,9 @@ function renderTemplate(template, user) {
         case 'login':
             output =  `
                 <section class="login">
-               
+                    <div class="icon-container">
+                        <h2 class="animated fadeIn" style="color:#424242; padding-right:10px;">BOSSMAN</h2> <h2 style="color:#fa0054;" class="animated fadeIn">INDUSTRIES</h2>	
+                    </div>
                     <form name="bossman" method="post" onsubmit="event.preventDefault(); login();">
                         <div>
                             <input type="text" id="username" autofocus placeholder="Username.." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username..'">
